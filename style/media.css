@@ -1,0 +1,227 @@
+@media screen and (max-width: 1024px) {
+   .right-menu { display: none; }
+
+   .wedding .container { padding-left: 30px; }
+   .wedding__block .wedding__sl { width: 525px; }
+
+   .socials .container { padding-left: 30px; }
+
+   .partners__block .partners__item-right { display: none; }
+   .partners__block .partners__item-left { width: 100%; }
+   .partners__block .partners__item-left img { width: 100%; }
+   .partners .partners__block .slide-arrows .slick-arrow { top: 50px; }
+
+   .biography__block .biography__img { width: 350px;}
+
+}
+
+@media screen and (max-width: 880px) {
+   .socials__block { flex-direction: column; }
+   .socials__block .socials__item {
+      max-width: 100%;
+      width: 100%;
+   }
+   .socials__block .sub-title { font-size: 25px;}
+}
+
+@media screen and (max-width: 768px) {
+
+   .top-menu { padding: 15px 0; }
+   .top-menu .container-gutter { padding: 0 30px; }
+   .top-menu .logo { display: block; }
+   .top-menu .nav {
+      position: absolute;
+      top: 0;
+      right: -150%;
+      background-color: #fff;
+      width: 350px;
+      height: 100vh;
+      padding: 15px;
+      transition: .3s ease-in;
+   }
+   .top-menu .nav-active { right: 0; }
+
+   .top-menu .nav__menu {
+      flex-direction: column;
+      height: 400px;
+      justify-content: space-between;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      align-items: center;
+   }
+   .top-menu .nav__menu .nav__list { padding-right: 0; }
+   .top-menu .nav__menu .nav__link { font-size: 16px; }
+
+   
+   /**burger-menu**/
+
+   .top-menu__mobile {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   .top-menu__mobile .burger-menu { display: block; }
+
+   .nav-overlay {
+      display: none;
+      width: 100%;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0);
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      animation: .3s ease-in-out fadeIn forwards;
+  }
+   @keyframes fadeIn {
+	   to { background: rgba(0,0,0,.8); }
+   }
+  .overlay-active { display: block; }
+
+   /**end-burger-menu**/
+
+
+   .leading .container { padding-left: 0; }
+   .leading .leading__img {
+      background-image: url(../img/header-bg-mobile.png);
+      background-position: right;  
+   }
+   .leading .leading__info-block { left: 55%; }
+   .leading .leading__info-block .message { display: none; }
+   .leading__box { position: relative; }
+   .leading__box .message-mobile {
+      display: block;
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translate(-50%,0);
+   }
+   .leading__box .message-mobile a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: #CB997E;
+      box-shadow: 0px 0px 20px 4px rgb(250 250 250);
+      -webkit-box-shadow: 0px 0px 20px 4px rgb(250 250 250);
+   }
+   .leading__box .leading__info-block .profession {
+      position: relative;
+      font-weight: 800;
+      padding: 13px 45px 13px;
+      border-radius: 5px;
+      background-color: #F0EFEB;
+      display: inline-block;
+   }
+
+   .leading__box .leading__info-block .description { width: 240px; }
+
+   /**wedding**/
+
+   .wedding__block {
+      flex-direction: column;
+      padding-top: 95px;
+   }
+   .wedding__block .wedding__sl { width: 100%; }
+   .wedding__sl-content {
+      margin-left: -22px;
+      padding: 0 15px;
+   }
+
+   .wedding__block .wedding__sl-info {
+      min-height: 0;
+      margin-bottom: 15px;
+   }
+   .wedding__block .slide-arrows .slick-arrow { top: 580px; }
+   .wedding__block .wedding__sl .slick-dots {
+      position: absolute;
+      left: 0;
+      top: -210px;
+      width: 90%;
+      height: 0;
+   }
+
+   .biography__block {
+      flex-direction: column;
+   }
+   .biography__block .biography__img {
+      background-image: url(../img/biography_mobile.png);
+      background-position: center -130px;
+      background-size: contain;
+      width: 600px;
+      margin: 0 auto;
+   }
+
+   .biography__block .biography__item-bio {
+      position: absolute;
+      left: 50%;
+      bottom: 60px;
+      transform: translate(-50%,0);
+  }
+
+   .feedback__block {
+      flex-direction: column;
+      align-items: center;
+   }
+   .feedback__block .feedback__item {
+      padding: 0;
+      margin-bottom: 25px;
+      width: 50%;
+   }
+
+   .feedback__block .feedback__title {
+      display: block;
+      font-size: 20px;
+      margin-bottom: 10px;
+   }
+
+   .feedback__block .feedback__form input, .feedback__message { margin-bottom: 20px; }
+
+   .feedback__form .feedback__send { padding: 10px;}
+   .feedback__block .feedback__documentation a {
+      padding: 20px;
+      width: 100%;
+   }
+   .feedback__block .feedback__documentation svg {
+      width: 20px;
+      height: 20px;
+   }
+   .feedback__block .feedback__element { order: 1; }
+
+}
+
+@media screen and (max-width: 540px) {
+   .socials__block .socials__inst .socials__img img,
+   .socials__block .socials__vk .socials__img img {
+      width: 375px;
+      height: 245px;
+   }
+
+   .socials__block .socials__inst .socials__img,
+   .socials__block .socials__vk .socials__img { margin-left: -8px; }
+
+   .feedback__block .feedback__item {
+      width: 100%;
+   }
+
+}
+
+@media screen and (max-width: 425px) {
+
+   .partners__block .partners__item-left { display: none; }
+   .partners__block .partners__item-right {
+      display: block;
+      width: 100%;
+   }
+   .partners .partners__block .partners__item-right img {
+      height: 100%;
+      width: 100%;
+   }
+
+}
